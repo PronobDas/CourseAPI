@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Jul 17 22:52:49 BDT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017a-b562-7ed5-000005a95490 
+on database directory memory:/home/pronob/Study Material/CourseAPI/50480265-0a64-42e2-b64e-084cc46850d1 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69 
+Loaded from file:/home/pronob/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Ubuntu
+java.runtime.version=11.0.11+9-Ubuntu-0ubuntu2.18.04
+user.dir=/home/pronob/Study Material/CourseAPI
+os.name=Linux
+os.arch=amd64
+os.version=5.4.0-77-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

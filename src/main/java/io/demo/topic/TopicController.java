@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class TopicController {
@@ -18,9 +19,15 @@ public class TopicController {
     }
 
     @RequestMapping("/topics/{id}")
-    public Topic getTopic(@PathVariable String id)
+    public Optional<Topic> getTopic(@PathVariable String id)
     {
         return topicService.getTopic(id);
+    }
+
+    @RequestMapping("/topics/name/{name}")
+    public Optional<Topic> getTopicByName(@PathVariable String name)
+    {
+        return topicService.getTopicByName(name);
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/topics")
@@ -41,6 +48,5 @@ public class TopicController {
     {
         topicService.deleteTopic(id);
     }
-
 
 }
