@@ -41,7 +41,7 @@ public class TopicService {
         return topicRepository.findById(id);
     }
 
-    public Optional<Topic> getTopicByName(String name)
+    public List<Topic> getTopicByName(String name)
     {
         return topicRepository.findByNameContaining(name);
     }

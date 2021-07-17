@@ -25,7 +25,7 @@ public class TopicController {
     }
 
     @RequestMapping("/topics/name/{name}")
-    public Optional<Topic> getTopicByName(@PathVariable String name)
+    public List<Topic> getTopicByName(@PathVariable String name)
     {
         return topicService.getTopicByName(name);
     }
